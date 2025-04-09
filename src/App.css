@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: front;
+    src: url('./font/kugile.regular.ttf')format("woff2");
+}
+@font-face {
+    font-family: second;
+    src: url('./font/duhit.regular.otf')format("woff2");
+}
+
+@font-face {
+    font-family: banner;
+    src: url(./font/movix.regular.ttf)format("woff2");
+}
+.hero{
+    background: url('./images/hero1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero1{
+    background: url('./images/banner.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cards{
+    border-right: 0.1px solid black;
+    border-left: 1px solid black;
+
+
+    
+}
+.cards img:hover {
+    scale: 1.3;
+}
