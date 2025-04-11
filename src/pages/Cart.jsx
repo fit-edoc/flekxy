@@ -1,5 +1,6 @@
 
 import React from 'react'
+<<<<<<< HEAD
 import { useDispatch, useSelector } from 'react-redux'
 import { incrementQuantity, decrementQuantity, removeFromCart } from '../redux/slices/cardSlice'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -71,5 +72,11 @@ export const Cart = () => {
       </div>
       
     </div>
+=======
+
+export const Cart = () => {
+  return (
+    <div className='h-[100vh] w-full bg-green-600'>Cart</div>
+>>>>>>> 046a5c2e9a4d2456b661831d56b0d78fe10d9abc
   )
 }
