@@ -23,13 +23,13 @@
 
 
 .hero{
-    background: url('./images/hero1.jpg');
+    background: url('/images/hero1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .hero1{
-    background: url('./images/banner.webp');
+    background: url('/images/banner.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
