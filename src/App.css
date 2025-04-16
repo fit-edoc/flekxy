@@ -51,6 +51,7 @@
 }
 
 .bill {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     mask: repeating-conic-gradient(from 135deg at 50% 8px,#0000 0,#000 1deg 89deg,#0000 90deg 180deg) 50% -8px/16px
   }
 
@@ -119,3 +120,15 @@
     -webkit-mask: var(--mask);
             mask: var(--mask);
   }
+.login_form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.register-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

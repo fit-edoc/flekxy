@@ -68,7 +68,7 @@ export default function Navbar() {
   }, [charIndex, typingForward, currentPhraseIndex]);
 
   return (
-    <nav className="navbar w-screen   bg-[#477836] h-[70px] fixed  text-white flex   capitalize z-50">
+    <nav className="navbar w-screen   bg-gradient-to-r from-green-200 to-slate-900 h-[70px] fixed  text-white flex   capitalize z-50">
       <div className="h-full w-[40%] flex items-center md:justify-center px-2 font-second text-nowrap">
         <Link to="/" className="font-flexx text-blue-50   md:text-[1.3vw]">flekxy</Link>
       </div>
@@ -89,7 +89,7 @@ export default function Navbar() {
         <Link to="/cart" className="relative" >
           <FaShoppingCart  /> {totalQuantity > 0 &&(<span className=" left-4 px-2  text-[15px] rounded-full absolute top-[-40%] text-black  bg-red-400 md:px-3 md:text-[20px]">{totalQuantity}</span>)}{" "}
         </Link>
-        <Link>
+        <Link to={'/profile'}>
           <MdOutlineAccountCircle />
         </Link>
         <Link onClick={() => setIsclick(true)}>
@@ -97,7 +97,7 @@ export default function Navbar() {
         </Link>
       </div>
       {isclick === true && (
-        <div className="absolute h-full w-full bg-green-950 flex ">
+        <div className="absolute h-full w-full  bg-gradient-to-r from-green-200 to-slate-900 flex ">
           <div className="h-full w-[0%]   items-center justify-center hidden md:flex  md:w-[30%]">  <Link to="/">E-Commerce</Link></div>
         <div className="h-full w-[100%]  flex items-center justify-center gap-2 md:w-[40%] px-2">  <input
             type="search"

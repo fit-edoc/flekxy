@@ -11,6 +11,11 @@ import {Cart} from './pages/Cart.jsx';
 
 import {Provider} from 'react-redux'
 import store from './redux/store/Store.js';
+import { MobileBill } from './pages/MobileBill.jsx';
+import { Login } from './pages/Auth/Login.jsx';
+import { Register } from './pages/Auth/Register.jsx';
+import UserProfile from './pages/UserProfile.jsx';
+import {SingleProduct} from './pages/SingleProduct.jsx';
 
 
 
@@ -22,7 +27,13 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> }, // "/"
       { path: 'about', element: <About /> }, // "/about"
       { path: 'contact', element: <Contact /> }, // "/contact"
-      { path: 'cart', element: <Cart /> } // "/cart"
+      { path: 'cart', element: <Cart /> } ,
+      {path:'mob',element :<MobileBill/>},// "/cart"
+      {path:'login',element:<Login/>},
+      {path:'register',element:<Register/>},
+      {path:'profile',element:<UserProfile/>},
+     {path:'/product/:id', element:<SingleProduct /> }
+
     ]
   }
 ]);
