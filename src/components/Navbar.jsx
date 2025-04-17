@@ -72,7 +72,7 @@ export default function Navbar() {
       <div className="h-full w-[40%] flex items-center md:justify-center px-2 font-second text-nowrap">
         <Link to="/" className="font-flexx text-blue-50   md:text-[1.3vw]">flekxy</Link>
       </div>
-      <div className="h-full w-[30%]  flex items-center justify-center opacity-0 md:opacity-100">
+      <div className="h-full w-[30%]   items-center justify-center  hidden md:flex">
         <ul className="flex justify-center  gap-4 items-center font-nav">
           <li>
             <Link to="/">Home</Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="h-full w-[20%] flex items-center justify-end  gap-2 ml-3 text-[30px] md:justify-start">
+      <div className="h-full w-[20%]   flex items-center justify-end  ml-[120px] gap-2  text-[30px] md:justify-center md:ml-0">
         <Link to="/cart" className="relative" >
           <FaShoppingCart  /> {totalQuantity > 0 &&(<span className=" left-4 px-2  text-[15px] rounded-full absolute top-[-40%] text-black  bg-red-400 md:px-3 md:text-[20px]">{totalQuantity}</span>)}{" "}
         </Link>

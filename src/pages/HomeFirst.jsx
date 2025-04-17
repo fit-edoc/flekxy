@@ -26,7 +26,7 @@ export const HomeFirst = () => {
               <img
                 src={item.imageUrl}
                 alt=""
-                className="md:h-[200px]  w-full object-contain object-center transition-all 2"
+                className="md:h-[200px]  w-full object-contain object-center rounded-md transition-all 2"
               />
             </Link>
             <div className="flex flex-col  justify-around font-second text-center items-center text-[10px] md:text-[15px]">
