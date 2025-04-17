@@ -17,14 +17,14 @@ export default function Footer() {
         
       ©{currentdate}<span className=""> FLEKXY </span> All rights reserved.
       </p>
-      <div className="flex justify-center gap-2 text-[20px]">
-        <a href="">
+      <div className="flex justify-center items-center gap-2 text-[30px]">
+        <a href="https://github.com/fit-edoc" className="text-indigo-600 active:text-white">
           <FaGithub />
         </a>{" "}
-        <a href="">
+        <a href="https://www.linkedin.com/in/himanshu-verma-6b4a94329/" className="text-blue-400 active:text-white">
           <FaLinkedin />
         </a>
-        <a href="">
+        <a href="mailto:himanshuverma2660@gmail.com" className="text-yellow-300 active:text-white">
           <MdEmail />
         </a>
       </div>

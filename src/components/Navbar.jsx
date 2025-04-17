@@ -98,7 +98,7 @@ export default function Navbar() {
       </div>
       {isclick === true && (
         <div className="absolute h-full w-full  bg-gradient-to-r from-green-200 to-slate-900 flex ">
-          <div className="h-full w-[0%]   items-center justify-center hidden md:flex  md:w-[30%]">  <Link to="/">E-Commerce</Link></div>
+          <div className="h-full w-[0%]   items-center justify-center hidden md:flex  md:w-[30%]">  <Link to="/" className="font-flexx text-blue-50   md:text-[1.3vw]">flekxy</Link></div>
         <div className="h-full w-[100%]  flex items-center justify-center gap-2 md:w-[40%] px-2">  <input
             type="search"
             className="text-[15px] h-[40px]  w-[220px] ml-5 rounded-md text-black py-3 px-1 md:w-[30vw]"
