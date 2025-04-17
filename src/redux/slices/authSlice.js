@@ -4,11 +4,13 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 const savedUser = localStorage.getItem('user');
+const myEnvVariable = process.env.frontend;
+
 
 // Async thunk for login
 export const loginUser = createAsyncThunk('auth/loginUser', async (credentials, thunkAPI) => {
   try {
-    const response = await axios.post(`${process.env.frontend}/login`, credentials);
+    const response = await axios.post(`${myEnvVariable}/login`, credentials);
     return response.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response?.data || { message: 'Login failed' });
@@ -18,7 +20,7 @@ export const loginUser = createAsyncThunk('auth/loginUser', async (credentials, 
 // Async thunk for register
 export const registerUser = createAsyncThunk('auth/register', async (userData, thunkAPI) => {
   try {
-    const response = await axios.post(`${process.env.frontend}/register`,userData, {
+    const response = await axios.post(`${myEnvVariable}/register`,userData, {
       headers: { 'Content-Type': 'application/json' }
     });
     return response.data;
