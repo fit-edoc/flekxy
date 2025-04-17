@@ -1,10 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import dotenv from 'dotenv'
+const myEnvVariable = import.meta.env.VITE_FRONTEND;
 
-dotenv.config()
+
+
 const savedUser = localStorage.getItem('user');
-const myEnvVariable = process.env.frontend;
+console.log(myEnvVariable);
+
 
 
 // Async thunk for login
@@ -41,6 +43,7 @@ const authSlice = createSlice({
     logout: (state) => {
       state.isAuthenticated = false;
       state.user = null;
+      state.username = null;
       localStorage.removeItem('user');
       localStorage.removeItem('token');
     }

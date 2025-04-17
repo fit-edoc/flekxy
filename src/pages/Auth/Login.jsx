@@ -1,7 +1,7 @@
 // components/Login.jsx
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loginUser ,} from '../../redux/slices/authSlice';
+import { loginUser } from '../../redux/slices/authSlice';
 import { Link, useNavigate } from 'react-router-dom';
 
 export const Login = () => {
@@ -17,7 +17,7 @@ export const Login = () => {
     dispatch(loginUser(form)).then((res) => {
       if (res.meta.requestStatus === 'fulfilled') navigate('/');
     });
-    dispatch(loginSuccess(response.data.user)); // Send user data to Redux
+     // Send user data to Redux
 
   };
 

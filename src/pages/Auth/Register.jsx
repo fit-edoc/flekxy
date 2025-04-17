@@ -16,7 +16,7 @@ export const Register = () => {
     e.preventDefault();
     try {
       await dispatch(registerUser(form)).unwrap();
-      setForm({ name: '', email: '', password: '', address: '' });
+      setForm({username:'', name: '', email: '', password: '', address: '' });
       navigate('/login');
     } catch (error) {
       console.error('Registration failed:', error);
